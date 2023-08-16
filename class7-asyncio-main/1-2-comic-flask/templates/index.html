@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ul {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    display:block;
+}
+ul li {display: inline-block;}
+
+</style>
+</head>
+<body>
+
+<h3>Time taken: {{ end-start }}</h3>
+<ul>
+  {% for url in urls: %}
+    <li><img src="{{url}}" width="300"></img></li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>
